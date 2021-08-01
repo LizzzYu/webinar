@@ -1,0 +1,31 @@
+.root {
+  display: block;
+  color: currentColor;
+  font: inherit;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: none;
+  outline: 0;
+  box-sizing: border-box;
+  resize: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type='number'] {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -moz-appearance: textfield;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

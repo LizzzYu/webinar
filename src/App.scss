@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: SF Pro Display;
+}
+
+.App {
+  text-align: center;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+
+  --main-board-width: 1180px;
+
+  --black: #333333;
+
+  --main-blue: #003476;
+  --dark-blue: #01254F;
+
+  --light-gray: #E9E9E9;
+  --main-gray: #F2F2F2;
+  --dark-gray: #DBDBDB;
+
+  --main-red: #88111D;
+  --main-green: #6BB718;
+
+  --input-border: #C6C6C6;
+
+  --disabled-color: #C6C6C6;
+  --error-color: #DA1918;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

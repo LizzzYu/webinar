@@ -1,0 +1,186 @@
+.wrapper {
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+}
+
+.headerTopWrapper {
+	height: 50px;
+	background-color: var(--main-gray);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+
+.headerTop {
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	justify-content: space-between;
+	align-items: center;
+	max-width: var(--main-board-width);
+}
+
+.constantRow {
+	display: grid;
+	grid-auto-columns: max-content;
+	grid-auto-flow: column;
+	column-gap: 50px;
+
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.headerTopActionRow {
+	display: grid;
+	grid-auto-columns: max-content;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-content: flex-start;
+	column-gap: 20px;
+}
+
+.headerText {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--main-blue);
+}
+
+.headerDownWrapper {
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+
+.headerDown {
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid var(--main-gray);
+	max-width: var(--main-board-width);
+	margin: 0 auto;
+
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	justify-content: space-between;
+}
+
+.headerDownLeftSec {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	column-gap: 50px;
+}
+
+.rowWrapper {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	column-gap: 5px;
+}
+
+.rowDropDownWrapper {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	column-gap: 50px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.rowDropDown {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	column-gap: 2px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.btnGroup {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	column-gap: 10px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.btn {
+	font-size: 14px;
+	width: 100px;
+	height: 35px;
+	border-radius: 2px;
+	outline: none;
+	border: 1px solid var(--main-blue);
+
+  @media (max-width: 767px) {
+    width: 90px;
+    height: 30px;
+  }
+}
+
+.loginBtn {
+	color: var(--main-blue);
+	background-color: white;
+
+  @media (max-width: 767px) {
+    margin-left: 10px;
+  }
+}
+
+.logOutBtn {
+	background-color: var(--main-blue);
+	color: white;
+}
+
+.background {
+	height: 140px;
+
+	@media (max-width: 767px) {
+		height: 100px;
+	}
+}
+
+.mobileHeader {
+	display: none;
+	width: 100%;
+  position: relative;
+
+	@media (max-width: 767px) {
+		display: block;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__btnGroup {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 35px 5px 0 0;
+
+		display: grid;
+		grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    row-gap: 12px;
+
+    @media (max-width: 767px) {
+    justify-items: flex-end;
+    }
+	}
+}

@@ -1,0 +1,116 @@
+@mixin typography-color {
+  .inherit {
+    color: inherit;
+  }
+
+  .main_blue {
+    color: var(--main-blue);
+  }
+
+  .main_red {
+    color: var(--main-red);
+  }
+
+  .dark_blue {
+    color: var(--dark-blue);
+  }
+
+  .error {
+    color: var(--error-color);
+  }
+
+  .black {
+    color: var(--black);
+  }
+
+  .grey {
+    color: var(--main-gray);
+  }
+
+  .disabled {
+    color: gray;
+  }
+}
+
+@mixin typography-size {
+  .content_28 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .content_22 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .content_16 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .content_14 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .title_16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin typography-align {
+  @each $align in left, center, right {
+    .#{$align} {
+      text-align: $align;
+    }
+  }
+}
+
+@mixin typography-weight {
+  .ex_bold {
+    font-weight: 600;
+  }
+
+  .bold {
+    font-weight: 500;
+  }
+
+  .normal {
+    font-weight: 400;
+  }
+}
+
+.root {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.asInlineBlock {
+  display: inline-block;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@include typography-color;
+@include typography-size;
+@include typography-weight;
+@include typography-align;

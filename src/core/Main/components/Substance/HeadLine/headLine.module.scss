@@ -1,0 +1,30 @@
+.headline__wrapper {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  padding: 80px 0;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 40px 0;
+  }
+}
+
+.headline__title {
+  font-family: SF Pro Display;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-bottom: 20px;
+}
+
+.headline__text {
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (max-width: 767px) {
+    padding: 0 25px;
+  }
+}

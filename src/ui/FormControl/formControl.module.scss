@@ -1,0 +1,59 @@
+.root {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  padding: 0;
+
+  &.errorBottom {
+    padding: 0 0 40px;
+    align-items: flex-end;
+  }
+
+  &.errorBottomLeft {
+    padding: 0 0 40px;
+  }
+}
+
+.bottomMessage {
+  position: absolute;
+  width: auto;
+  right: 0;
+  bottom: 15px;
+  white-space: nowrap;
+
+  &.errorBottomLeft {
+    left: 0;
+    bottom: 15px;
+  }
+}
+
+/* control-label */
+.controlLabel {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.label {
+  flex-shrink: 0;
+  font-weight: 400;
+}
+
+.asterisk {
+  color: var(--error-color);
+  line-height: 16px;
+}
+
+.paddingLeft {
+  padding-left: 4px;
+}
+
+/* control-message */
+.message {
+  line-height: 22px;
+  white-space: nowrap;
+}

@@ -1,0 +1,2 @@
+export const FORM_REGISTER = 'FORM/FORM_REGISTER';
+export const FORM_LOGIN = 'FORM/FORM_LOGIN';
