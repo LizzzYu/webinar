@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/webinar/static/css/main.b5fe6666.chunk.css",
+    "main.js": "/webinar/static/js/main.2f2cbc13.chunk.js",
+    "main.js.map": "/webinar/static/js/main.2f2cbc13.chunk.js.map",
+    "runtime-main.js": "/webinar/static/js/runtime-main.86c0079a.js",
+    "runtime-main.js.map": "/webinar/static/js/runtime-main.86c0079a.js.map",
+    "static/js/2.0976ce45.chunk.js": "/webinar/static/js/2.0976ce45.chunk.js",
+    "static/js/2.0976ce45.chunk.js.map": "/webinar/static/js/2.0976ce45.chunk.js.map",
+    "static/js/3.bb64c50e.chunk.js": "/webinar/static/js/3.bb64c50e.chunk.js",
+    "static/js/3.bb64c50e.chunk.js.map": "/webinar/static/js/3.bb64c50e.chunk.js.map",
+    "index.html": "/webinar/index.html",
+    "static/css/main.b5fe6666.chunk.css.map": "/webinar/static/css/main.b5fe6666.chunk.css.map",
+    "static/js/2.0976ce45.chunk.js.LICENSE.txt": "/webinar/static/js/2.0976ce45.chunk.js.LICENSE.txt",
+    "static/media/footer_img.c49a3ef6.png": "/webinar/static/media/footer_img.c49a3ef6.png",
+    "static/media/header-mobile.a10b058f.png": "/webinar/static/media/header-mobile.a10b058f.png",
+    "static/media/logo.dadd5036.png": "/webinar/static/media/logo.dadd5036.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86c0079a.js",
+    "static/js/2.0976ce45.chunk.js",
+    "static/css/main.b5fe6666.chunk.css",
+    "static/js/main.2f2cbc13.chunk.js"
+  ]
+}
