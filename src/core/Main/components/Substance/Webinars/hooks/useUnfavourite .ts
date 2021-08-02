@@ -1,6 +1,6 @@
 import { getAuthToken } from "../../../../../utils/getAuthToken";
 
-const url = 'https://api.finlogix.com/v1';
+const url = 'https://api.finlogix.com';
 
 export default function useUnfavorited(webinarId: number): Promise<void> | undefined {
   const token = getAuthToken();
@@ -10,7 +10,7 @@ export default function useUnfavorited(webinarId: number): Promise<void> | undef
     return;
   }
 
-  return fetch(`${url}/favourites/post/${webinarId}`, {
+  return fetch(`${url}/v1/favourites/post/${webinarId}`, {
     method: 'DELETE',
     headers: {
       'authorization': `Bearer ${token}`,

@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import { getAuthToken } from './../utils/getAuthToken';
 
-const url = 'https://api.finlogix.com/v1';
+const url = 'https://api.finlogix.com';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const useMe = (): Promise<any> => {
   // 從 localStorage 拿取 token
   const token = getAuthToken();
 
-  return fetch(`${url}/auth/me`, {
+  return fetch(`${url}/v1/auth/me`, {
     method: 'POST',
     headers: {
       authorization: `Bearer ${token}`,

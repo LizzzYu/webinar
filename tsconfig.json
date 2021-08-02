@@ -8,7 +8,7 @@
     ],
     "plugins": [
       {
-        "name": "typescript-plugin-css-modules",
+        "name": "typescript-plugin-css-modules"
       }
     ],
     "allowJs": false,
@@ -22,7 +22,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
     "jsx": "react-jsx",
     "sourceMap": true
   },
@@ -30,5 +30,5 @@
     "src",
     "global.d.ts",
     "webpack.config.js"
-  ]
+  ],
 }

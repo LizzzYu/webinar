@@ -1,12 +1,12 @@
 import { setAuthToken } from "../../../../utils/setAuthToken";
 
-const url = 'https://api.finlogix.com/v1';
+const url = 'https://api.finlogix.com';
 
 export const useLogin = (
   email: string, password: string
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ): Promise<any> => {
-  return fetch(`${url}/auth/email/login`, {
+  return fetch(`${url}/v1/auth/email/login`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
