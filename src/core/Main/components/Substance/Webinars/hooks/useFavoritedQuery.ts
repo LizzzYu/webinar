@@ -1,7 +1,7 @@
 import { getAuthToken } from '../../../../../utils/getAuthToken';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const url = 'https://api.finlogix.com';
+const url = '/v1';
 
 export default function useFavoritedQuery(): Promise<any> | undefined {
 	const token = getAuthToken();
@@ -11,7 +11,7 @@ export default function useFavoritedQuery(): Promise<any> | undefined {
     return;
 	}
 
-	return fetch(`${url}/v1/posts?favourited=1&author=userId`, {
+	return fetch(`${url}/posts?favourited=1&author=userId`, {
 		method: 'GET',
 		headers: {
 			'content-type': 'application/json',

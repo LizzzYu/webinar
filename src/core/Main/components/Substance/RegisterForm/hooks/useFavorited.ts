@@ -1,6 +1,6 @@
 import { getAuthToken } from "../../../../../utils/getAuthToken";
 
-const url = 'https://api.finlogix.com';
+const url = '/v1';
 
 export default function useFavorited(webinarId: number[]): Promise<void> | undefined {
   const token = getAuthToken();
@@ -10,7 +10,7 @@ export default function useFavorited(webinarId: number[]): Promise<void> | undef
     return;
   }
 
-  return fetch(`${url}/v1/favourites`, {
+  return fetch(`${url}/favourites`, {
     method: 'POST',
     headers: {
 			'content-type': 'application/json',
