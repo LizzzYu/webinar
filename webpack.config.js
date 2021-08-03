@@ -19,12 +19,12 @@ module.exports = {
 		contentBase: path.join(__dirname, 'dist'),
 		compress: true,
 		port: 9000,
-		proxy: {
-			'/v1': {
-				target: 'https://api.finlogix.com',
-				secure: false,
-			},
-		},
+		// proxy: {
+		// 	'/v1': {
+		// 		target: 'https://api.finlogix.com',
+		// 		secure: false,
+		// 	},
+		// },
 		// proxy: {
 		// 	'https://api.finlogix.com': {
 		// 		target: 'http://localhost:9000',

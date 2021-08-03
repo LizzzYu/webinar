@@ -7,10 +7,10 @@ export interface WebinarResponseType {
 	};
 }
 
-const url = '/v1';
+const url = 'https://api.finlogix.com';
 
 export default function useWebinarQuery(webinarId: number): Promise<WebinarResponseType> {
-	return fetch(`${url}/posts/${webinarId}`, {
+	return fetch(`${url}/v1/posts/${webinarId}`, {
 		method: 'GET',
 		headers: {
 			'content-type': 'application/json',
